@@ -31,7 +31,7 @@ emojis = "*"
 ipython = "*"
 
 [feature.terminal.tasks]
-start = "ipython --profile-dir=."
+start = "unset SESSION_MANAGER && MPLBACKEND=qtagg ipython --profile-dir=."
 pvs = "ipython --profile-dir=. -c 'get_pv_types(); exit()'"
 
 [feature.qs.dependencies ]
